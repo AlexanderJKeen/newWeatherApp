@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    background-color: #659DBD;
+    font-family: Great Vibes;
+    
+}
+#top{
+    display:grid;
+    text-align: center;
+}
+
+#location{
+    border-radius: 25px;
+    padding: 20px; 
+    width: 170px;
+    height: 10px;  
+    justify-self: center;
+    font-size: 20px;
+    border-color:black;
+  }
+  #place{
+    font-family: Amatic SC;
+  }
+  #summary{
+    font-family: Shadows Into Light;
+  }
+  #temp{
+    font-family: Permanent Marker;
+    font-size: 50px;
+  }
+  #but{
+    border-radius: 25px;
+    width:100px;
+    justify-self: center;
+    background-color: #3500d3;
+    border-color:black;
+
+  }
