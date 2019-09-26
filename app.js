@@ -5,11 +5,13 @@ const main = async (places) => {
     const location = await getLocation(places)
     const weather = await getWeather(location)
     const temp = await Math.floor((weather.temperature - 32) * 5/9)
+    const icon = await getWeather(weather.icon)
     
     return {
         place: location.name,
         temp: temp,
-        summary: weather.summary
+        summary: weather.summary,
+        icon: weather.icon
     };
     
 }
