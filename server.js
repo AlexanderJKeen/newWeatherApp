@@ -7,10 +7,11 @@ const port = process.env.PORT || 3006;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/weather", async (req, res)=>{
+app.get("/weather", async (req, res) => {
     let data = await main(req.query.location);
     res.send(data);
 });
+
 app.listen(port, () => {
     console.log(`listening to port ${port}`);
 })
