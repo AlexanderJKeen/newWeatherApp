@@ -1,7 +1,7 @@
 const request = require ('request')
 const {promisify} = require('util')
 // const {pk} = require('./keys')
-const pk = pk.eyJ1IjoiYWxleGFuZGVya2VlbiIsImEiOiJjazBucWlkcXowMmd1M2NzMzJyeGt1eW41In0
+const pk = "pk.eyJ1IjoiYWxleGFuZGVya2VlbiIsImEiOiJjazBucWlkcXowMmd1M2NzMzJyeGt1eW41In0"
 
 const promisifiedRequest = promisify(request)
 
