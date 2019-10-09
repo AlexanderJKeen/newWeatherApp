@@ -1,7 +1,9 @@
 const request = require ('request')
 const {promisify} = require('util')
 const promisifiedRequest = promisify(request)
-const{apiKey} = require('./keys')
+// const{apiKey} = require('./keys')
+const apiKey = "ea9623e4aa1b5c7effd7e1c284ed0721"
+
 
 const getWeather = async (location) => {
     try{ 
