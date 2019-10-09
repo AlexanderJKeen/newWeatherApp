@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
 const {main} = require('./app')
-const port = process.env.PORT || 3006;
 
 const app = express();
+const port = process.env.PORT || 3006;
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/weather", async (req, res)=>{

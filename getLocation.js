@@ -3,6 +3,7 @@ const {promisify} = require('util')
 // const {pk} = require('./keys')
 const pk = "pk.eyJ1IjoiYWxleGFuZGVya2VlbiIsImEiOiJjazBucWlkcXowMmd1M2NzMzJyeGt1eW41In0.qHaV6xO2ezQkRzQEl2NVAA"
 
+
 const promisifiedRequest = promisify(request)
 
 const getLocation = async (places) => {
