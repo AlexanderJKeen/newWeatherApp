@@ -12,7 +12,7 @@ button.addEventListener('click', async () => {
     pic1.innerHTML = " ";
 
 
-    let response = await fetch(`http://localhost:3006/weather?location=${input.value}`);
+    let response = await fetch(`/weather?location=${input.value}`);
     let data = await response.json();
     summary.textContent = data.summary;
     pic1.innerHTML = data.icon;
